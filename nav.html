@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 附加导航（Affix）插件</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="./bootstrap-3.3.5-dist/js/jquery-1.11.1.min.js"></script>
+    <script src="./bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myNav").affix({
+                offset: {
+                    top: 125
+                }
+            });
+        });
+    </script>
+    <script src="js/nav.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" id="myNav">
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        用户审核
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#section-1">已注册</a></li>
+                        <li><a href="#section-2">未审核</a></li>
+                        <li><a href="#section-3">审核通过</a></li>
+                        <li><a href="#section-4">审核沒通过</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        设置权限
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#section-5">提升管理員</a></li>
+                        <li><a href="#section-6">提升管理員</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section-7">设置費用</a></li>
+                <li><a href="#section-8">设置电子围栏</a></li>
+                <li><a href="#section-9">数据汇总</a></li>
+                <li><a href="#section-10">远程控制还车</a></li>
+                <li><a href="#section-11">充值记录</a></li>
+                <li><a href="#section-12">意外还车</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <div class="list">
+                <h2 id="section-1">已注册的用戶</h2>
+                <form class="form-inline">
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                    <div class="user">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                    </div>
+                </form>
+            </div>
+            <div class="list">
+                <hr>
+                <h2 id="section-2">未审核的用戶</h2>
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="col-md-4">
+                                <div class="form-inline">
+                                    <label>姓名</label><input type="text" class="form-control" value="張苑" readOnly="true">
+                                    <label>电话</label><input type="text" class="form-control" value="15809287557"
+                                                            readOnly="true"></div>
+                                <div class="form-inline">
+                                    <label>密码</label><input type="text" class="form-control" value="123456"
+                                                            readOnly="true">
+                                    <label>权限</label> <input type="text" class="form-control" value="用戶"
+                                                             readOnly="true">
+                                </div>
+                                <div class="form-inline">
+                                    <label>押金</label> <input type="text" class="form-control" value="500"
+                                                             readOnly="true">
+                                    <button>通過</button>
+                                </div>
+                            </div>
+                            <div class="col-md-8 photo">
+                                <img src="./images/1.jpg" class=" img-responsive img-thumbnail" alt="Cinque Terre">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="col-md-4">
+                                <div class="form-inline">
+                                    <label>姓名</label><input type="text" class="form-control" value="張苑" readOnly="true">
+                                    <label>电话</label><input type="text" class="form-control" value="15809287557"
+                                                            readOnly="true"></div>
+                                <div class="form-inline">
+                                    <label>密码</label><input type="text" class="form-control" value="123456"
+                                                            readOnly="true">
+                                    <label>权限</label> <input type="text" class="form-control" value="用戶"
+                                                             readOnly="true">
+                                </div>
+                                <div class="form-inline">
+                                    <label>押金</label> <input type="text" class="form-control" value="500"
+                                                             readOnly="true">
+                                    <button>通過</button>
+                                </div>
+                            </div>
+                            <div class="col-md-8 photo">
+                                <img src="./images/1.jpg" class=" img-responsive img-thumbnail" alt="Cinque Terre">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="col-md-4">
+                                <div class="form-inline">
+                                    <label>姓名</label><input type="text" class="form-control" value="張苑" readOnly="true">
+                                    <label>电话</label><input type="text" class="form-control" value="15809287557"
+                                                            readOnly="true"></div>
+                                <div class="form-inline">
+                                    <label>密码</label><input type="text" class="form-control" value="123456"
+                                                            readOnly="true">
+                                    <label>权限</label> <input type="text" class="form-control" value="用戶"
+                                                             readOnly="true">
+                                </div>
+                                <div class="form-inline">
+                                    <label>押金</label> <input type="text" class="form-control" value="500" readOnly="true">
+                                    <button type="submit" class="btn btn-default">通過</button>
+                                </div>
+                            </div>
+                            <div class="col-md-8 photo">
+                                <img src="./images/1.jpg" class=" img-responsive img-thumbnail" alt="Cinque Terre">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="section-3">审核通过的用戶</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-4">审核沒通过的用戶</h2>
+                <form>
+                    <div class="">
+                        <label>姓名</label><input type="text" class="form-control" value="張苑" readOnly="true">
+                        <label>电话</label><input type="text" class="form-control" value="15809287557" readOnly="true">
+                        <label>密码</label><input type="text" class="form-control" value="123456" readOnly="true">
+                        <label>权限</label> <input type="text" class="form-control" value="用戶" readOnly="true">
+                        <label>押金</label> <input type="text" class="form-control" value="×××" readOnly="true">
+                    </div>
+                </form>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-5">提升管理員</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-6">提升管理員</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-7">设置費用</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-8">设置电子围栏</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-9">数据汇总</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-10">远程控制还车</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-11">充值记录</h2>
+                <hr>
+            </div>
+            <div>
+                <h2 id="section-12">意外还车</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
